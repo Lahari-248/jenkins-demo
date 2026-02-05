@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Print Message') {
+        stage('Read file from GitHub') {
             steps {
-                echo 'hello jenkins'
+                bat 'type hai\\hi.txt'
             }
         }
     }
